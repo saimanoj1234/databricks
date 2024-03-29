@@ -40,5 +40,5 @@ df.createOrReplaceTempView("olympics_players")
 
 # COMMAND ----------
 
-college_data = df.groupBy("college").count().orderBy("count", ascending=False)
+college_data = df.groupBy("college").count().orderBy("count", ascending=True)
 college_data.show()
